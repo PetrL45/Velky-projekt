@@ -76,32 +76,9 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
-  border-top: 1px solid grey;
+  border-top: 1px solid  grey;
 }
-.panel {
-  border: 1px solid grey;
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-}
-.panel img {
-  max-width: 100%;
-}
-.panel h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-.panel p {
-  font-size: 1rem;
-  color: #555;
-}
-.panel button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
+
 a{
   color: #000;
   text-decoration: none;
@@ -143,4 +120,84 @@ hr {
   clear: both;
   margin-bottom: 20px;
   margin-top: 10px;
+}
+
+.card-container {
+  width: 600px;
+  height: 500px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: justify;
+  display: flex;
+  margin-right: 20px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.card .front-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.card .front-content p {
+  font-size: 28px;
+  font-weight: 700;
+  opacity: 1;
+  background: linear-gradient(-45deg, #0087 0%, #d75f00 100% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background: linear-gradient(-45deg, #0087 0%, #d75f00 100% );
+  color: #e8e8e8;
+  padding: 5px;
+  line-height: 1.5;
+  border-radius: 5px;
+  pointer-events: none;
+  transform: translateY(96%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .content .heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card:hover .content {
+  transform: translateY(0);
+}
+
+.card:hover .front-content {
+  transform: translateY(-30%);
+}
+
+.card:hover .front-content p {
+  opacity: 0;
+}
+@media only screen and (max-width:720px){
+
 }
