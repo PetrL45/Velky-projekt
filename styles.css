@@ -83,10 +83,10 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
-  border-top: 1px solid #444;
+  border-top: 1px solid grey;
 }
 .panel {
-  border: 1px solid #ccc;
+  border: 1px solid grey;
   padding: 20px;
   margin: 10px;
   text-align: center;
@@ -109,10 +109,29 @@ footer {
   padding: 10px 20px;
   cursor: pointer;
 }
-.owc-lower-footer-social__icon {
-  width: 20px;
-  height: 20px;
-}
 a{
   color: #000;
+  text-decoration: none;
+}
+a:hover{
+  color: white;
+}
+.navbar {
+  background-color: grey;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+.navbar img {
+  width: 24px;
+  height: 24px;
+}
+.navbar .mercedes {
+  font-size: 24px;
 }
