@@ -1,12 +1,10 @@
-body {
-  margin: 10px;
+body {  
   font-family: 'Roboto', sans-serif;
   color: white;
   background: radial-gradient(circle, #005f, #000);
 }
 header {
   min-height: 50vh;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -33,9 +31,6 @@ nav ul li a:hover {
   color: var(--secondary-color);
 }
 
-h1 {
-  font-size: 50px;
-}
 section{
   padding: 20px;
   text-align: justify;
@@ -48,13 +43,7 @@ section{
   background-repeat: no-repeat;
   background-size: cover;
 }
-p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
 footer {
-  padding: 1rem;
   text-align: center;
   background-color: grey;
   color: #000;
