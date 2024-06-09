@@ -38,13 +38,14 @@ section{
   text-align: justify;
 }
 .parallax {
-  background-image: url("img/OIP.png");
-  min-height: 300px; 
+  background-image: url("img/mercedesName.webp");
+  min-height: 250px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
+
 footer {
   text-align: center;
   background-color: grey;
