@@ -13,7 +13,9 @@ header {
   background-image: url(img/Mercedes.jpeg);
   min-height: 100vh;
   background-size:cover; 
-  background-position: center; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 nav ul {
@@ -36,14 +38,6 @@ nav ul li a:hover {
 section{
   padding: 20px;
   text-align: justify;
-}
-.parallax {
-  background-image: url("img/mercedesName.webp");
-  min-height: 250px; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
 }
 
 footer {
