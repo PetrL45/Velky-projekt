@@ -204,7 +204,8 @@ hr {
 }
 @media only screen and (max-width:960px){
   header{
-    min-height: 10vh;
+    height: auto;
+    width: auto;
   }
   a{
     color: #000;
